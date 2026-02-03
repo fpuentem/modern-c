@@ -57,7 +57,7 @@ void merge_sort(size_t n, double A[static n]) {
   double *tmp = malloc(n * sizeof(double));
   if (tmp) {
     merge(mid, A, n - mid, A + mid, tmp);
-        // Copy sorted 'tmp' back into original 'A'
+    // Copy sorted 'tmp' back into original 'A'
     memcpy(A, tmp, n * sizeof(double));
     free(tmp);
   } else {
